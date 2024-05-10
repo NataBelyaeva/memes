@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM</title>
+
+    <link href="./file/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./file/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="c-styles.css">
+    <script src="c-app.js" defer></script>
+    
+</head>
+<body>
+  <header>
+    
+    <nav class="navb" style="background-color: #9D81BA52; height: 76px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 " style="padding-left: 50px; padding-top: 2px;">
+            <img src="/svg/smile_head_icon.svg" alt="" height="50px" width="50px" >
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding-top: 8px;">
+            <span style="font-size: 30px;"><b>Generate memes</b></span>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 header-create-mem" style="padding-top: 12px;">
+            <img src="/svg/dice_generate.svg" height="28px" width="28px">
+            <a href="index.html" class="text_h"><b>Сгенерировать мем</b></a>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 header-create-mem" >
+            <img src="/svg/earth_head.svg" height="30px" width="30px" class="earth_head">
+            <a href="#" class="text_h"><b>Изменить язык</b></a>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding:0px">
+            <div class="short-div" >
+              <a target="_blank" href="https://vk.me/join/kiXRoO6dR1l61joQk53Gk75qD2aZxXg_X0M="><img src="/svg/vk_head.svg" alt="" height="30px" width="30px" class="vk_head"></a>
+              <a href=""><img src="/svg/tg_head.svg" alt="" height="27px" width="27px" class="tg_head"></a>
+            </div>
+            <div class="short-div"><span id="connection" style="font-size: 12px;"><b>Свяжись с нами</b></span></div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding:0px">
+            <div class="short-div" >
+              <a href=""><img src="/svg/sharer.svg" alt="" height="24px" width="24px" class="sharer"></a>
+            </div>
+            <div class="short-div" style="padding: 5px;"><span id="share" style="font-size: 12px;"><b>Поделись</b></span></div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+
+  <main>
+    
+          
+    <img src="/svg/pattern.jpg" alt=""  class="image-edit-text rounded mx-auto d-block" height="400px" width="400px" style="margin-top: 20px;" >
+    <img src="https://ltdfoto.ru/images/2024/05/09/bg-pattern.png" class="image-edit-text mx-auto d-block" id="image" height="300px" width="340px">
+                 
+    
+    
+    <div class="loadImg">
+      <label class="loadMem-btn">
+        <input type="file" name="loadMem" id="loadMem" accept=".jpeg, .png, .jpg">
+        <p class="loadMem-memText"><b>Загрузить фото</b></p>
+      </label>
+    </div>
+
+    
+
+    
+
+     <div class="choose-img">
+        <div class="container" style="padding: 0;">
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/1test-mem-img.jpg')"><img src="../МЕМ/1test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/2test-mem-img.jpg')"><img id="2" src="../МЕМ/2test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/3test-mem-img.jpg')"><img id="3" src="../МЕМ/3test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/4test-mem-img.jpg')"><img id="4" src="../МЕМ/4test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/5test-mem-img.jpg')"><img id="5" src="../МЕМ/5test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/6test-mem-img.jpg')"><img id="6" src="../МЕМ/6test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/7test-mem-img.jpg')"><img src="../МЕМ/7test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/8test-mem-img.jpg')"><img src="../МЕМ/8test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/9test-mem-img.jpg')"><img src="../МЕМ/9test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/10test-mem-img.jpg')"><img src="../МЕМ/10test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/11test-mem-img.jpg')"><img src="../МЕМ/11test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/12test-mem-img.jpg')"><img src="../МЕМ/12test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/13test-mem-img.jpg')"><img src="../МЕМ/13test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/14test-mem-img.jpg')"><img src="../МЕМ/14test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/15test-mem-img.jpg')"><img src="../МЕМ/15test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/16test-mem-img.jpg')"><img src="../МЕМ/16test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/17test-mem-img.jpg')"><img src="../МЕМ/17test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/18test-mem-img.jpg')"><img src="../МЕМ/18test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/19test-mem-img.jpg')"><img src="../МЕМ/19test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/20test-mem-img.jpg')"><img src="../МЕМ/20test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/21test-mem-img.jpg')"><img src="../МЕМ/21test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            <div class="row">
+                <div class="col-4"><button class="test-mem-img" id="img-button" onclick="getImg('../МЕМ/22test-mem-img.jpg')"><img src="../МЕМ/22test-mem-img.jpg" alt="" height="100px" width="100px"></button></div>
+            </div>
+            
+        </div>
+     </div>
+
+     <div class="choose-text">
+        <button class="text1" id="chooseText" onclick="getText('Никто: <br>Абсолютно никто: <br>Я в рандомный момент:')">Никто: Абсолютно никто: Я в рандомный момент:</button>
+        <button class="text2" id="chooseText" onclick="getText('Я: Почему со мной никто не знакомиться <br>Также я на всех мероприятиях:')">Я: Почему со мной никто не знакомиться Также я на всех мероприятиях:</button>
+        <button class="text2" id="chooseText" onclick="getText('Когда встал к первой паре:')">Когда встал к первой паре:</button>
+        <button class="text2" id="chooseText" onclick="getText('Когда мама спрашивает, хорошо <br>ли ты питаешься в общаге?')">Когда мама спрашивает, чем ты питаешься в общаге?</button>
+        <button class="text2" id="chooseText" onclick="getText('Когда перезапустил код 15 раз, <br>а он так и не заработал')">Когда перезапустил код 15 раз, а он так и не заработал:</button>
+        <button class="text2" id="chooseText" onclick="getText('Мужчины говорят: у нас нет депрессии <br>А потом создают это')">Мужчины говорят: у нас не бывает депрессии А потом создают это:</button>
+        <button class="text2" id="chooseText" onclick="getText('Я: Мам, давай заведём домашнее животное <br>Мама: У нас есть домашнее животное дома <br>Домашнее животное дома:')">Я: Мам, давай заведём домашнее животное Мама: У нас есть домашнее животное дома Домашнее животное дома:</button>
+        <button class="text2" id="chooseText" onclick="getText('Ощущения, когда ты случайно лайкнул <br>чужое фото на Instagram из 2012 года')">Ощущения, когда ты случайно лайкнул чужое фото на Instagram из 2012 года</button>
+        <button class="text2" id="chooseText" onclick="getText('Когда ты решил попробовать новый <br>рецепт, но вместо готового блюда <br>получил кулинарную катастрофу')">Когда ты решил попробовать новый рецепт, но вместо готового блюда получил кулинарную катастрофу</button>
+</div>
+
+
+
+<div class="dropdown" style="text-align: center;">
+      <button class="download"><b>Скачать</b></button>
+        <div class="dropdown-content">
+            <a href="#">.png</a>
+            <a href="#">.jpeg</a>
+            <a href="#">.pdf</a>
+        </div> 
+    </div>
+
+    <div style="color: #FFF; text-align: center;">
+      <p><span class="span-text-generate mx-auto" id="text"></span></p>
+     </div>
+  
+  </main>
+    
+</body>
+</html>
