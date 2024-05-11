@@ -33,6 +33,9 @@ var imgs=[
   "https://ltdfoto.ru/images/2024/04/11/zM7bt7wsXig.jpg",
   "https://ltdfoto.ru/images/2024/04/11/V2l7CVUyynE.jpg",
   "https://ltdfoto.ru/images/2024/04/11/JvHqHddqhHE.jpg",
+  "https://ltdfoto.ru/images/2024/05/11/0nCRu5wWgzU.jpg",
+  "https://ltdfoto.ru/images/2024/05/11/2TB1Bvob6bw.jpg",
+  "https://ltdfoto.ru/images/2024/05/11/8yOwo_z1cSI.jpg",
 ]
 
 var texts=[
